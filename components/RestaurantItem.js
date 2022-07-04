@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
-const localRestaunrants = [
+export const localRestaurants = [
     {
         name: "Beachside Bar",
         image_url: "https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
@@ -29,11 +29,11 @@ const localRestaunrants = [
     },
 ]
 
-export default function RestaurantItem() {
+export default function RestaurantItem(props) {
   return (
     // activeOpacity turns off the animation when clicked
     <TouchableOpacity activeOpacity={1} style={{ marginBottom: 30 }}>
-        {localRestaunrants.map((restaurant, index) => (
+        {props.restaurantData.map((restaurant, index) => (
         <View key={index} style={{ marginTop: 10, padding: 15, backgroundColor: "white" }}>
             <RestaurantImage image={restaurant.image_url} />
             <RestaurantInfo name={restaurant.name} rating={restaurant.rating} />
