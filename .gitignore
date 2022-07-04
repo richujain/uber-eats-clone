@@ -3,7 +3,8 @@
 .DS_Store
 
 # api keys
-.env
+config/
+*.env
 
 # Xcode
 #
