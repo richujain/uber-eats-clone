@@ -17,6 +17,7 @@
 
 ## 🚀 How to use
 
+- Add your Google Places API in SearchBar.js.
 - Install packages with `yarn` or `npm install`.
   - If you have native iOS code run `npx pod-install`
 - Run `yarn start` to start the bundler.
