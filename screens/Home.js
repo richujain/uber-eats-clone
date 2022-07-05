@@ -8,6 +8,7 @@ import { Divider } from 'react-native-elements'
 import BottomTabs from '../components/home/BottomTabs'
 
 
+
 const YELP_API_KEY = "Loco5voB7QlJT43paP6EHGT4zXvYqh-dy7SyZV_fQiql6Ld-AWh-1_coZLhNV3nDP2NR9C478I54JME9Qv_f6DYYbtIIh1BpRXpn2YBaBs-9lPSBZEZG7dkHY6DzYHYx"
 //console.log(process.env.REACT_APP_YELP_KEY)
 
