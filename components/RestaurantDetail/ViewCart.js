@@ -2,14 +2,12 @@ import { View, Text, TouchableOpacity, Modal, StyleSheet } from 'react-native'
 import {React, useState} from 'react'
 import { useSelector } from 'react-redux';
 import OrderItem from './OrderItem';
-// import firebase from "firebase/app";
-// import "firebase/firestore";
 import firebase from '../../firebase'; 
 
 
 
 
-export default function ViewCart() {
+export default function ViewCart({ navigation }) {
     const [modalVisible, setModalVisible] = useState(false)
 
     const {items, restaurantName} = useSelector((state) => state.cartReducer.selectedItems);
@@ -32,6 +30,7 @@ export default function ViewCart() {
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       })
         setModalVisible(false)
+        navigation.navigate("OrderCompleted") 
     }
     
     const styles= StyleSheet.create({
