@@ -1,4 +1,4 @@
-# My Uber Eats Clone React Project
+# My Uber Eats Clone React Native Project
 
 <p>
   <!-- iOS -->
@@ -14,6 +14,11 @@
     <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
   </a>
 </p>
+
+## Preview
+
+[![Watch the video](https://i.imgur.com/EGEc6PP.png)](https://youtu.be/dcd7Dgpucbo)
+
 
 ## 🚀 How to use
 
